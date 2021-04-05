@@ -1,0 +1,100 @@
+/* width */
+
+body{
+}
+.divBody{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.divOne{
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height:95vh;
+    flex:.7;
+    border-right: .5px solid green;
+    padding-top:1rem;
+}
+
+.lowerSideBar h3{
+    padding:.4rem
+}
+.lowerSideBar h3:hover{
+    background-color: #5cab7d;
+    color:white;
+    cursor:pointer;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.divTwo{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    flex:2;
+    height:95vh;
+    border-right: .5px solid green;
+    max-width:45%;
+    overflow-y: scroll;
+    padding-top:5rem;
+}
+.input{
+    width:330px;
+    margin-top:50px;
+    border-bottom:.5px solid #5cab7d
+}
+.button{
+    margin-top:50px;
+    width:350px;
+    border-radius:30px;
+    font-weight:bold;
+    height:55px;
+    background-color:#5cab7d;
+    /* border:.5px solid #5cab7d; */
+    border:5px solid green;
+    margin-bottom:10px
+}
+.divThree{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    height:95vh;
+    padding-top:2rem;
+    align-items:center
+}
+
+
+ /* Media Query for Mobile Devices */ 
+
+ /* mobile phone ?? */
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 0px) and (max-width: 767px) { 
+  body { /* background-color: red;  */ } 
+  .divOne{ flex:0; display:none; }
+  .divTwo{ flex:1; max-width:100%;padding-top:45px }
+  .input{width:90%}
+  .button{width:90%}
+  .divThree{ flex:0; display:none; }
+} 
+
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px) and (max-width: 1024px){ 
+  .divOne{ flex:.7; }
+  .divTwo{ flex:2; max-width:65%; }
+  .divThree{ flex:1; display:none; }
+} 
+
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+  body { /* background-color: green;  */ } 
+} 
+
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+  body { /* background-color: white;  */ } 
+} 
+
+@media only screen and(max-width: 700px) { 
+ 
+} 
+/* weird phones like samsung galaxy fold */

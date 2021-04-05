@@ -1,0 +1,105 @@
+/* width */
+
+body{
+}
+.divBody{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.divOne{
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height:100vh;
+    flex:.7;
+    border-right: .5px solid green;
+    padding-top:1rem;
+}
+
+.lowerSideBar h3{
+    padding:.4rem
+}
+.lowerSideBar h3:hover{
+    background-color: #5cab7d;
+    color:white;
+    cursor:pointer;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.divTwo{
+    flex:2;
+    height:100vh;
+    border-right: .5px solid green;
+    max-width:45%;
+    overflow-y: scroll;
+    background-color: white;
+    padding-bottom:5rem;
+}
+.topicDiv:hover{
+    background-color:rgba(190, 190, 190, 0.2);
+    transition:.3s;
+}
+.chatInput{
+    width:45%;
+    height:auto;
+    position:fixed;
+    border:.5px solid lightgrey;
+    bottom:7px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:flex-end;
+    background-color:white;
+}
+.divThree{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    height:95vh;
+    padding-top:2rem;
+    align-items:center
+}
+
+
+ /* Media Query for Mobile Devices */ 
+
+ /* mobile phone ?? */
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 0px) and (max-width: 767px) { 
+    body { /* background-color: red;  */ } 
+    .divOne{ flex:0; display:none; }
+    .divTwo{ flex:1; max-width:100%;padding-top:45px }
+    .topicWrapper{padding-top:40px}
+    .divThree{ flex:0; display:none; }
+    .chatInput{
+        width:100%;
+    }
+
+} 
+  
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px) and (max-width: 1024px){ 
+    .divOne{ flex:.7; }
+    .divTwo{ flex:2; max-width:65%; }
+    .divThree{ flex:1; display:none; }
+    .chatInput{
+        width:65%;
+    }
+    .topicWrapper{}
+} 
+  
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+    body { /* background-color: green;  */ } 
+} 
+  
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+    body { /* background-color: white;  */ } 
+} 
+
+@media only screen and(max-width: 700px) { 
+   
+} 
+/* weird phones like samsung galaxy fold */

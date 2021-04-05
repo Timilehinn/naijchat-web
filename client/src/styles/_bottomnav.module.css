@@ -1,0 +1,15 @@
+.bottomnav{
+    display:none;
+    align-items:center;
+    justify-content:space-evenly;
+    position:fixed;
+    bottom:0;
+    width:100vw;
+    height:50px;
+    background-color:white;
+}
+@media (min-width: 0px) and (max-width: 767px) { 
+    .bottomnav{
+        display: flex;
+    }
+}
